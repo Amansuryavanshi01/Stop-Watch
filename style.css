@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #d9d1d1;
+  }
+  
+  .stp-wtc {
+    max-width: 400px;
+    margin: 40px auto;
+    margin-top: 20vh;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 3px 24px 14px rgba(129, 163, 230, 1);
+    text-align: center;
+  }
+  
+  /* For tablets and larger screens */
+  @media (min-width: 768px) {
+    .stp-wtc {
+      max-width: 600px;
+    }
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 480px) {
+    .stp-wtc {
+      max-width: 300px;
+      margin: 20px auto;
+    }
+  }
+  
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .Start-btn, .Stop-btn, .Reset-btn {
+    margin: 10px;
+  }
+  
+  .Reset-clear-btns {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  
+  .time-btn, .clear-btn {
+    width: 50%;
+    margin: 10px;
+  }
+  
+  .buttons > button:nth-child(-n + 3) {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+  
+  button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #countDown {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
